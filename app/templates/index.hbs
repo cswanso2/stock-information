@@ -1,0 +1,12 @@
+<form role="form" align="center">
+  <div class="form-group">
+    <label for="Company Name">Company Name:</label>
+     {{input value=search}}
+  </div>
+</form>
+
+<ul>
+  {{#each model as |company|}}
+    <li>{{#link-to "company" company}} {{company.name}}, {{company.symbol}}{{/link-to}}</li>
+  {{/each}}
+</ul>

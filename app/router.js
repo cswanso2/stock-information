@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('company', {path: 'company/:symbol'})
 });
 
 export default Router;
