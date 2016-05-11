@@ -7,6 +7,6 @@
 
 <ul>
   {{#each model as |company|}}
-    <li>{{#link-to "company" company}} {{company.name}}, {{company.symbol}}{{/link-to}}</li>
+    <li>{{#link-to "company" company.symbol}} {{company.name}}, {{company.symbol}}{{/link-to}}</li>
   {{/each}}
 </ul>
