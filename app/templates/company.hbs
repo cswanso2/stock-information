@@ -1,6 +1,5 @@
 {{outlet}}
-    <li>{{model.name}}, {{model.symbol}} {{model.prices}}</li>
-    {{ember-chart-component data=model.prices type="Bar" height=200 width=200}}
+    {{model.name}}, {{model.symbol}} {{model.prices}}
+    {{ember-chart data=model.prices type="Bar" height=1000 width=1000}}
 
-     <canvas id="myChart" width="400" height="400"></canvas>
-     
+    
